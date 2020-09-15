@@ -120,7 +120,7 @@ nav {
     bottom: 0;
     font-size: 7vw;
     font-weight: 100;
-    color: rgb(75, 65, 226);
+    color: rgb(255, 255, 255);
     text-shadow: 3px 3px 0 #000;
     position: absolute;
 }
@@ -462,7 +462,11 @@ main {
 
 @media (max-width: 600px) {
 
-#panel, #panel_eap {
+/* #panel, #panel_eap {
+    display: none;
+} */
+
+.menu-item {
     display: none;
 }
 
@@ -470,7 +474,6 @@ main {
     width: 100%;
     margin: 0;
     padding: 0;
-    position: fixed;
 }
 
 
@@ -488,9 +491,16 @@ header {
     margin: 0;
 }
 
-.menu-item {
-    display: none;
+#picukraine {
+    margin-top: 20vh;
 }
+
+#safety_large {
+    margin-top: 35px;
+    text-align: center;
+}
+
+
 
 
 /*
