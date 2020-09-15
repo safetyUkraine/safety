@@ -4,7 +4,9 @@
 }
 
 @-moz-document url-prefix() {
-    html,body{overflow: hidden !important;}
+    html, body {
+        overflow: hidden;
+    }
 }
 
 
@@ -111,14 +113,14 @@ nav {
 
 #safety_large {
     margin-top: 40vh;
-    margin-left: 100px;
+    margin-left: 3vw;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     font-size: 7vw;
     font-weight: 100;
-    color: white;
+    color: rgb(224, 21, 21);
     text-shadow: 3px 3px 0 #000;
     position: absolute;
 }
