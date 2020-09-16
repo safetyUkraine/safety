@@ -432,20 +432,20 @@ main {
 @media (max-width: 600px) {
    
 .menu-item {
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
   
 #ukraine > img {
-        margin-top: 35vh;
+        margin-top: 30vh;
 }
 
 #safety_large {
-    margin-top: 15vh;
+    margin-top: 12vh;
     text-align: center;
-    font-weight: bold;
-    font-size: 10vw;
+    font-weight: 800;
+    font-size: max(4vw, 3rem);
     color: #5A92E4;
-    text-shadow: text-shadow: 0.5px 0.5px 0 #0003a7;
+    text-shadow: 2px 2px 0 #0003a7;
 }
 
  #crimes_txt {
