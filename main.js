@@ -23,7 +23,7 @@ $("p.crimes_cl").click(function(){
   var file_name = "crimes/"+$(this).data('value')+".html";
   $("#panel").animate({left: "-=100vw"}, 500, function(){
    $("header").css("visibility", "hidden"); 
-    $("main").css("visibility", "hidden");
+    $("#ukraine, #home, main").css("visibility", "hidden");
     $("#panel").animate({left: "-=100vw"}, 500, function(){
       window.location.href = file_name;
     })
