@@ -24,7 +24,7 @@ html { /* for scrollTop to work in Firefox
 
 
 
-#burger-shower, #ham {
+.hamburger, .menu-checkbox {
     display: none;
 }
 
@@ -460,8 +460,10 @@ nav {
 }
 
 .hamburger, .menu-checkbox {
+    display: block;
+    margin-top: 5px;
     position: fixed;
-    left: 90vw;
+    left: 85vw;
 }
 
 .menu-checkbox {
@@ -471,7 +473,7 @@ nav {
 }
 
 .hamburger > img {
-    height: 50px;
+    height: 45px;
 }
 
 
