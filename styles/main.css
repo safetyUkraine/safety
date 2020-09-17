@@ -71,20 +71,15 @@ header {
     z-index: 10;
 }
 
-
-
 #logo {
     height: 50px;
     margin-left: 1.5vw;
     align-self: center;
 }
 
-
-
 nav {
     display: flex;
 }
-
 
 .menu-item {
     display: inline-block;
@@ -109,8 +104,6 @@ nav {
 .menu-item:last-child {
     padding-right: 10px;
 }
-
-
 
 #ukraine {
     width: 100%;
@@ -159,7 +152,6 @@ main {
     width: 100%;
     height: 100vh;
 }
-
 
 #crimes_txt {
     display: flex;
@@ -237,9 +229,7 @@ main {
     object-fit: cover;
 }
 
-
-
-#threats_ph {
+#threats_position {
     position: absolute;
     margin-top: -60px;
     z-index: -1;
@@ -249,41 +239,23 @@ main {
     position: relative;
     background-color: white;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
 }
 
-#threats > div:first-of-type {
-    display: flex;
-    align-items: center;
-    font-size: max(4vw, 40px);
-    height: 15vh;
-    background: rgb(255, 255, 255);
+#threats_title > h1 {
     position: relative;
-    z-index: 1;
-}
-
-#threats > div:first-of-type > h1 {
-    width: 100%;
-    text-align: right;
-}
-
-#threats_txt {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px 0 20px;
-    position: relative;
-    height: 35vh;
-}
-
-#threats_title {
-    position: relative;
+    font-size: 5vw;
     padding-top: 1vw;
-    font-size: max(4vw, 40px);
+    text-align: right;
     z-index: 1;
+}
+
+#threats_title > h1:first-of-type {
+    height: 6vw;
+    background: rgb(255, 255, 255);
 }
 
 #threats_title > h1:last-of-type {
-    text-align: right;
     color: rgb(255, 255, 255);
     text-shadow:
     -2px -2px 0 #000,  
@@ -292,17 +264,18 @@ main {
       2px 2px 0 #000;
 }
 
+
 #threats_txt {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 1vw;
-    font-size: max(2vw, 16px);
-    align-self: flex-end;
+    padding: 3vh 20px 0 20px;
+    position: relative;
+    height: 45vh;
+    font-size: 4vh;
     z-index: 1;
     width: fit-content;
 }
-
 
 .threats_cl {
     display: inline-block;
@@ -336,19 +309,18 @@ main {
     position: relative;
     background-color: white;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
 }
 
 #eap_txt {
     display: flex;
     justify-content: space-between;
-    padding: 0 20px 0 20px;
+    padding: 80px 20px 0 20px;
     position: relative;
 }
 
 #eap_txt > p {
-    margin-top: 70px;
-    font-size: max(2.5vw, 24px);
+    font-size: 2.5vw;
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-shadow:
@@ -370,6 +342,7 @@ main {
 }
 
 #eap_title {
+    position: relative;
     width: 100%;
     text-align: center;
     margin-top: 30vh;
@@ -381,7 +354,6 @@ main {
      -2px 2px 0 #000,
       2px 2px 0 #000;
     z-index: 1;
-    position: relative;
 }
 
 #eap_pic > img {
@@ -512,7 +484,7 @@ nav {
     font-weight: 800;
     font-size: max(4vw, 3rem);
     color: #5A92E4;
-    text-shadow: 2px 2px 0 #0003a7;
+    text-shadow: 1px 1px 0 #0003a7;
 }
 
  #crimes_txt {
@@ -544,10 +516,115 @@ nav {
     flex-direction: column;
     align-items: center;
     height: 40vh;
-    font-size: max(2vw, 1.5rem);
+    font-size: 3.5vh;
     z-index: 1;
 } 
 
+
+#threats_title > h1 {
+    position: relative;
+    font-size: 12vw;
+    padding-top: 2vw;
+    text-align: center;
+    z-index: 1;
+}
+
+#threats_title > h1:first-of-type {
+    height: 15vw;
+    background: rgb(255, 255, 255);
+}
+
+#threats_title > h1:last-of-type {
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+     -2px 2px 0 #000,
+      2px 2px 0 #000;
+}
+
+
+#threats_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15vh 0 0 0;
+    position: relative;
+    height: 35vh;
+    font-size: 3.5vh;
+    z-index: 1;
+    width: 100%;
+}
+
+.threats_cl {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    width: fit-content;
+    align-self: center;
+}
+
+.threats_cl:hover {
+    cursor: pointer;
+    text-shadow:
+    2px 2px #5f7eac77,
+    1px 1px #5f7eac77,
+    2px 2px #5f7eac77;
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+}
+
+#threats_pic > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    opacity: 0.8;
+    object-fit: cover;
+}
+
+
+#eap_title {
+    margin-top: 20vh;
+    font-size: 2rem;
+    text-shadow: none;
+    color: black;
+}
+
+#eap_title > h1 {
+    font-weight: 600;
+}
+
+#eap_txt {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    height: 50vh;
+}
+
+#eap_txt > p {
+    font-size: 8vh;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    text-shadow:
+    -2px -2px 0 #000,  
+     2px -2px 0 #000,
+     -2px 2px 0 #000,
+      2px 2px 0 #000;
+    z-index: 1;
+}
+
+#eap_txt > p:hover {
+    cursor: pointer;
+    text-shadow:
+    1px 1px #0003a7,
+    1px 1px #0003a7,
+    1px 1px #0003a7;
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+}
 
 }
 

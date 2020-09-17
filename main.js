@@ -35,7 +35,7 @@ $("p.threats_cl").click(function(){
   var file_name = "threats/"+$(this).data('value')+".html";
   $("#panel").animate({left: "-=100vw"}, 500, function(){
     $("header").css("visibility", "hidden"); 
-    $("main").css("visibility", "hidden");
+    $("#ukraine, #home, main").css("visibility", "hidden");
     $("#panel").animate({left: "-=100vw"}, 500, function(){
       window.location.href = file_name;
     })
@@ -46,7 +46,7 @@ $("p.eap_cl").click(function(){
   var file_name = "eap/"+$(this).data('value')+".html";
   $("#panel_eap").animate({left: "-=100vw"}, 500, function(){
     $("header").css("visibility", "hidden"); 
-    $("main").css("visibility", "hidden");
+    $("#ukraine, #home, main").css("visibility", "hidden");
     $("#panel_eap").animate({left: "-=100vw"}, 500, function(){
       window.location.href = file_name;
     })
