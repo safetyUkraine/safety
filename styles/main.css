@@ -3,25 +3,40 @@
     padding: 0;
 }
 
-@-moz-document url-prefix() {
+html { /* for scrollTop to work in Firefox
+    overflow: hidden; */
+    height: 100%;
+}
+
+
+
+@-moz-document url-prefix() { /*to get rid of scrollbars */
     html, body {
         overflow: hidden;
     }
 }
 
 
-::-webkit-scrollbar {
+
+::-webkit-scrollbar { /*to get rid of scrollbars */
     display: none;
 }
 
-#checkbox, #ham {
+
+
+#burger-shower, #ham {
     display: none;
 }
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
+    overflow: auto; /* for scrollTop to work in Firefox */
+    height: 100%; /* for scrollTop to work in Firefox */
 }
+
+
 
 #panel {
     left: 100vw;
@@ -42,6 +57,7 @@ body {
 }
 
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -55,15 +71,20 @@ header {
     z-index: 10;
 }
 
+
+
 #logo {
     height: 50px;
     margin-left: 1.5vw;
     align-self: center;
 }
 
+
+
 nav {
     display: flex;
 }
+
 
 .menu-item {
     display: inline-block;
@@ -429,12 +450,56 @@ main {
 }
 
 
+
 @media (max-width: 600px) {
-   
-.menu-item {
-        font-size: 3vw;
-    }
-  
+
+
+
+nav {
+    display: none;
+}
+
+.hamburger, .menu-checkbox {
+    position: fixed;
+    left: 90vw;
+}
+
+.menu-checkbox {
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.hamburger > img {
+    height: 50px;
+}
+
+
+.menu-checkbox:checked ~ nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    left: 20vw;
+    width: 80vw;
+    position: absolute;
+    margin-top: 60px;
+    height: 30vh;
+    padding-bottom: 0;
+    background-color:  #5A92E4;
+    font-weight: normal;
+}
+
+
+.menu-click {
+    font-size: 4vw;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-shadow: none;
+    padding-right: 2vw;
+
+}
+ 
+
 #ukraine > img {
         margin-top: 30vh;
 }
