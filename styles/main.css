@@ -3,10 +3,10 @@
     padding: 0;
 }
 
-html { /* for scrollTop to work in Firefox
-    overflow: hidden; */
+/*html { /* for scrollTop to work in Firefox 
+    overflow: hidden;
     height: 100%;
-}
+} */
 
 
 
@@ -32,8 +32,6 @@ html { /* for scrollTop to work in Firefox
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
-    overflow: auto; /* for scrollTop to work in Firefox */
-    height: 100%; /* for scrollTop to work in Firefox */
 }
 
 
@@ -378,7 +376,6 @@ main {
     position: relative;
     width: 100%;
     text-align: left;
-    margin-left: 3vw;
     font-size: 4vw;
     color: white;
     text-shadow:
@@ -387,7 +384,10 @@ main {
     -2px 2px 0 #000,
      2px 2px 0 #000;
     z-index: 1;
+}
 
+#res_title > h1 {
+    margin-left: 4vw;
 }
 
 #res_txt {
