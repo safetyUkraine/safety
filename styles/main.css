@@ -160,7 +160,7 @@ main {
 #crimes_title {
     padding-top: 60vh;
     padding-left: 10px;
-    font-size: max(4vw, 2rem);
+    font-size: 4vw;
     align-self: flex-end;
     z-index: 1;
 }
@@ -180,7 +180,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    font-size: max(2vw, 1rem);
+    font-size: 4vh;
     padding-right: 10px;
     padding-top: 20vh;
     z-index: 1;
