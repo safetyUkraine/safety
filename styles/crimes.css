@@ -48,7 +48,7 @@ header {
 #safety {
     align-self: center;
     color: rgb(255, 255, 255);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
@@ -59,8 +59,8 @@ header {
     text-decoration: none;
     color: white;
     font-size: 1rem;
-    font-weight: 200;
-    text-shadow: 1px 1px 0 #000;
+    font-weight: 300;
+    text-shadow: 2px 2px 0 #000;
 }
 
 #menu:hover {
@@ -101,9 +101,9 @@ ol {
 
 @media (max-width: 600px) {
 
-    #menu {
-        font-size: 0.8rem;
-    }
+#menu {
+    font-size: 0.8rem;
+}
 
 #title {
     font-size: 3rem;
