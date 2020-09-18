@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -48,7 +49,7 @@ header {
 #safety {
     align-self: center;
     color: #5A92E4;
-    font-size: min(3vw, 1.5rem);
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -58,7 +59,7 @@ header {
     align-self: center;
     text-decoration: none;
     color: #5A92E4;
-    font-size: min(1.8vw, 14px);
+    font-size: 1rem;
     font-weight: 200;
     text-shadow: 1px 1px 0 #000;
 }
@@ -79,6 +80,8 @@ main {
     margin: 60px 0 0 0;
     padding-bottom: 100px;
     color: white;
+    height: 100%;
+    min-height: 100vh;
 }
 
 #text, #title {
@@ -86,10 +89,8 @@ main {
 }
 
 #title {
-    padding: 15px 0 15px 0;
-    font-size: min(4vw, 3rem);
-    align-self: flex-end;
-    z-index: 1;
+    padding: 30px 0 30px 0;
+    font-size: min(5vw, 3rem);
 }
 
 #text > img {
@@ -98,10 +99,35 @@ main {
 }
 
 #text > p {
-    font-size: min(3vw, 1.5rem);
+    font-size: 1.5rem;
 }
 
 ol {
-    font-size: min(3vw, 1.5rem);
+    font-size: 1.5rem;
     margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+
+    #menu {
+        font-size: 0.8rem;
+    }
+
+#title {
+    font-size: 3rem;
+}
+
+#text > p {
+    font-size: 1.3rem;
+}
+
+ol {
+    font-size: 1.3rem;
+    margin-left: 20px;
+}
+
+#text > img {
+    margin: 0 15px 5px 0;
+}
+
 }

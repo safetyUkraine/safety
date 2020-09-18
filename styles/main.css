@@ -428,8 +428,6 @@ main {
 
 @media (max-width: 600px) {
 
-
-
 nav {
     display: none;
 }
@@ -451,13 +449,12 @@ nav {
     height: 45px;
 }
 
-
 .menu-checkbox:checked ~ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    left: 50vw;
-    width: 35vw;
+    left: 65vw;
+    width: 30vw;
     position: absolute;
     margin-top: 60px;
     height: 30vh;
@@ -466,14 +463,13 @@ nav {
     font-weight: normal;
 }
 
-
 .menu-click {
     font-size: 4vw;
     font-weight: normal;
     color: rgb(255, 255, 255);
     text-shadow: none;
-    padding-right: 2vw;
-
+    padding-left: 0;
+    margin-right: 0;
 }
  
 
