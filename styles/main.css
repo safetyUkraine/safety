@@ -585,7 +585,7 @@ nav {
 
 
 #eap_title {
-    margin-top: 20vh;
+    margin-top: 12vh;
     font-size: 3.5vh;
     text-shadow: none;
     color: black;
@@ -599,18 +599,18 @@ nav {
     flex-direction: column;
     align-items: center;
     padding-top: 90px;
-    height: 50vh;
+    height: 45vh;
 }
 
 #eap_txt > p {
     font-size: 8vh;
-    font-weight: 200;
+    font-weight: 500;
     color: rgb(255, 255, 255);
     text-shadow:
-    -2px -2px 0 #000,  
-     2px -2px 0 #000,
-     -2px 2px 0 #000,
-      2px 2px 0 #000;
+    -3px -3px 0 #000,  
+     3px -3px 0 #000,
+     -3px 3px 0 #000,
+      3px 3px 0 #000;
     z-index: 1;
 }
 
@@ -668,7 +668,7 @@ nav {
 #res_pic > img {
     margin: 0;
     padding: 0;
-    margin-top: 20vh;
+    margin-top: 25vh;
     position: absolute;
     width: 100vw;
 }

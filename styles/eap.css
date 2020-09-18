@@ -112,9 +112,13 @@ ol {
 
 @media (max-width: 600px) {
 
-    #menu {
-        font-size: 0.8rem;
-    }
+#menu {
+    font-size: 0.8rem;
+}
+
+#safety {
+    font-size: 1.3rem;
+}
 
 #title {
     font-size: 3rem;
