@@ -344,7 +344,7 @@ main {
     width: 100%;
     text-align: center;
     margin-top: 30vh;
-    font-size: max(4vw, 40px);
+    font-size: 4vw;
     color: white;
     text-shadow:
     -2px -2px 0 #000,  
