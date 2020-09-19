@@ -94,6 +94,7 @@ main {
 
 #text > img {
     float: left;
+    width: 35vw;
     margin: 0 25px 10px 0;
 }
 

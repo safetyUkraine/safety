@@ -98,6 +98,7 @@ main {
 
 #text > img {
     float: left;
+    width: 35vw;
     margin: 0 25px 10px 0;
 }
 
@@ -123,6 +124,7 @@ ol {
 
 #title {
     font-size: 3rem;
+    text-align: center;
 }
 
 #text > p {
@@ -135,6 +137,7 @@ ol {
 }
 
 #text > img {
+    width: 90vw;
     margin: 0 15px 5px 0;
 }
 
