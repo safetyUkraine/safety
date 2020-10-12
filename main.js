@@ -14,7 +14,7 @@ $("p.crimes_cl").click(function(){
   $("#panel").animate({left: "-=100vw"}, 500, function(){
   $("header, header, #ukraine, #home, main").css("visibility", "hidden"); 
      $("#panel").animate({left: "-=100vw"}, 500, function(){
-      window.location.href = window.location.href;
+     window.location.href = window.location.href;
       window.location.href = file_name;
     })
   })

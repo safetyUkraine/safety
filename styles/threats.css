@@ -16,7 +16,7 @@ body {
 #panel {
     left: -100vw;
     top: 0;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     background-color: #5A92E4;
     height: 100vh;
