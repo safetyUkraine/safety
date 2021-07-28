@@ -342,9 +342,10 @@ main {
 #eap_title {
     position: relative;
     width: 100%;
+    line-height: 1.5;
     text-align: center;
     margin-top: 30vh;
-    font-size: 4vw;
+    font-size: 4.5vw;
     color: white;
     text-shadow:
     -2px -2px 0 #000,  
