@@ -405,6 +405,10 @@ main {
     text-decoration: none;
     font-size: 3vw;
     font-weight: 600;
+    text-shadow:
+    2px 2px #ffffff,
+    1px 1px #ffffff,
+    2px 2px #ffffff;
     color: black;
     z-index: 1;
     width: fit-content;
